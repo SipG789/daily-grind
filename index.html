@@ -14,27 +14,53 @@
 </head>
 
 <body>
-  <header class="jumbotron">
+  <header class="jumbotron sticky-top">
     <h1 class="display-3">The Daily Grind</h1>
-    <p class="lead">You got things you need to do. This is where you log it all!</p>
+    <p class="lead mt-auto d-lg-block">You got things you need to do. This is where you log it all!</p>
     <p id="currentDay" class="lead"></p>
   </header>
 
   <!-- Timeblocks go here -->
   <div id="list-to-do" class="container m-auto justify-content-around col-12">
-    <div class="row">
-      <h2 id="time-stamps" class="time-block col-3">time</h2>
+<!-- 5:00 am-->    
+    <div class="card row">
+      <h2 id="time-stamps" class="time-block col-3">
+        5:00 am
+      </h2>
       <div id="list-inProgress" class="items col-6">
-        <p id="list-item-task" class="list-group text-center">things to do</p>
+        <p id="list-item-task" class="list-group">
+          things to do
+        </p>
       </div>
       <!-- save icon-->
       <div id="save-time-now" class="col-3">
-        <button id="save-icon" class="saveBtn" type="submit">
+        <button id="save-icon" class="saveBtn align-items-center" type="submit">
           <span class="iconify" data-icon="entypo:save"></span>
         </button>
       </div>
     </div>
+<!--6:00 am-->
+    <div class="card row">
+      <h2 id="time-stamps" class="time-block col-3">
+        6:00 am
+      </h2>
+      <div id="list-inProgress" class="items col-6">
+        <p id="list-item-task" class="list-group">
+          things to do
+        </p>
+      </div>
+      <!-- save icon-->
+      <div id="save-time-now" class="col-3">
+        <button id="save-icon" class="saveBtn align-items-center" type="submit">
+          <span class="iconify" data-icon="entypo:save"></span>
+        </button>
+      </div>
+    </div>
+  
+
   </div>
+
+
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
