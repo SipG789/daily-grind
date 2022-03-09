@@ -8,7 +8,18 @@ today.textContent = currentDate.format('MMMM Do YYYY, h:mm:ss a');
 // TODO: color code time blocks to indicate past, present, future (audits 5.4.6)
 
 // TODO: when I click on a time block I can enter an event (onClick function 5.2 lesson)
-$(".items").on("click", "p", function() {
-    console.log(this);
+$(".list-group").on("click", "p", function() {
+    var text = $(this)
+    .text()
+    .trim();
+
+    var textInput = $("<textarea>")
+    .addClass("form-control")
+    .val(text);
+
+    // edit task block 
+    $(this).replaceWith(textInput);
+
+    textInput.trigger("focus");
 });
 // TODO: save to local storage 
